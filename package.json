@@ -23,7 +23,10 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "gluegun": "latest"
+    "gluegun": "latest",
+    "js-yaml": "^3.13.1",
+    "json-query": "^2.2.2",
+    "rethinkdb": "^2.3.3"
   },
   "devDependencies": {
     "standard": "^12.0.1",

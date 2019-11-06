@@ -1,6 +1,10 @@
 module.exports = {
-    run: async toolbox => {
-        toolbox.print.printHelp(toolbox)
+    run: async ({ done, meta }) => {
+        done({
+            commands: meta
+                .commandInfo()
+                .map(([name, description]) => ({ name, description }))
+        })
     },
     hidden: true
 }

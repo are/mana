@@ -11,7 +11,7 @@ module.exports = toolbox => {
     }
 
     toolbox.done = (data = {}) => {
-        process.stdout.write(`${JSON.stringify({ ok: true, ...data })}\n`)
+        process.stdout.write(`${JSON.stringify(data)}\n`)
         process.exit(0)
     }
 
